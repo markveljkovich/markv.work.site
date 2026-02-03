@@ -1,0 +1,21 @@
+h2{
+    margin-bottom: var(--ms);
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    text-wrap: pretty;
+}
+
+p + p{
+	margin-top: 2ch;
+}
+
+.font-l{
+    font-size: var(--fs-l);
+    line-height: var(--lh);
+    letter-spacing: -0.02em;
+}

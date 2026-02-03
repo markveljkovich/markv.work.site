@@ -1,0 +1,42 @@
+footer{
+    padding: var(--ml) var(--ms) var(--ms);
+    /* position: sticky;
+    bottom: 0; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.lu, .next-project{
+    justify-self: flex-end;
+    grid-column: 3;
+}
+
+@media only screen and (orientation: landscape) {
+}
+
+@media only screen and (orientation: portrait) {
+    
+}
+
+@media (max-width:641px){
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #btt{
+        display: none;
+    }
+}
+
+@media screen and (hover:hover){
+	#btt:hover{
+		color: var(--grey);
+	}
+}
+
+@media screen and (pointer:coarse) {
+	#btt:active{
+		color: var(--grey);
+	}
+}

@@ -1,0 +1,48 @@
+
+@import 'style_reset.css';
+@import 'style_fonts.css';
+
+@import 'style_global.css';
+@import 'style_header.css';
+
+@import 'style_home.css';
+@import 'style_about.css';
+@import 'style_project.css';
+@import 'style_footer.css';
+
+
+/* Variables
+==================================== */
+:root{
+	/* Text Setting */
+	--font: 'Kumbh Sans', sans-serif;
+	--fs: 12px;
+	--fs-l: calc(var(--fs) * 2);
+	--lh: 1.15;
+	--font-sans--kerning-m: -0.01em;
+	
+	/* Color */
+	--grey: #a2a2a2;
+	--bg: #fff;
+	--text: #000;
+	--overlay: rgba(255, 255, 255, 0.85);
+
+	/* effects */
+	--opacity: 25%;
+
+	/* Margins */
+	--ms: 10px;
+	--gap: calc(var(--ms) / 2);
+	--ml: calc(var(--ms) * 4);
+
+	/* Transitions */
+	--speed: 300ms;
+	--speedx4: calc(var(--speed) * 4);
+	--ease: cubic-bezier(0.17, 0, 0.83, 1);
+}
+
+@media (max-width:640px){
+	:root{
+		--fs-l: calc(var(--fs) * 1.5);
+	}
+}

@@ -1,0 +1,63 @@
+/* Reset CSS
+======================================== */
+*,
+*::after,
+*::before{
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html, body,
+header, footer,
+section, article, aside, menu, nav,
+div, span, button, dl, dt, dd,
+h1, h2, h3, h4, h5, h6, hgroup,
+p, ol, ul, li, a, strong, b, i, s, address, time, sub, sup, hr,
+form, fieldset, label,
+figure, figcaption,
+iframe, embed, audio{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+    background: none;
+}
+html{
+	scrollbar-width: none;
+}
+::selection{
+	color: rgba(255, 255, 255, 0.999);
+	background-color: rgba(0, 0, 0, 0.999);
+}
+::-webkit-scrollbar{
+	display: none;
+}
+:focus,
+:focus-visible{
+	outline: none !important;
+}
+:focus::-ms-value{
+	color: inherit;
+	background-color: none;
+}
+::-moz-focus-inner{
+	border: none !important;
+}
+
+/* Figures
+======================================== */
+svg{
+	overflow: visible;
+}
+
+/* Links
+======================================== */
+a, button{
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
