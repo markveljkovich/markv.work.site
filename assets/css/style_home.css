@@ -78,3 +78,9 @@
         opacity: 1;
     }
 }
+
+@media (hover: none), (pointer: coarse) {
+  .project-hover {
+    display: none !important;
+  }
+}
